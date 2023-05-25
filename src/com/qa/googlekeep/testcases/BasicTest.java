@@ -31,7 +31,7 @@ public class BasicTest {
 	@Test(description="To verify the User is able to create Note of Google Keep")
 	public void verifyUserIsAbleToCreateNote () throws InterruptedException {
 
-		// To verify wheather is able to login with Valid Credentials
+		// To verify wheather user is able to login with Valid Credentials
 
 		WebElement userName=driver.findElement(By.id("identifierId"));
 		userName.sendKeys("testuser21111994@gmail.com");
