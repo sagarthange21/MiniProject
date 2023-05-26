@@ -17,7 +17,7 @@ public class BasicTest {
 	WebDriver driver;
 
 	@BeforeMethod
-	public void setUp() throws InterruptedException 
+	public void setUp() 
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\UP2215\\Desktop\\Project\\chromedriver_win32\\chromedriver.exe");
 
@@ -29,7 +29,8 @@ public class BasicTest {
 
 
 	@Test(description="To verify the User is able to create Note of Google Keep")
-	public void verifyUserIsAbleToCreateNote () throws InterruptedException {
+	public void verifyUserIsAbleToCreateNote () throws InterruptedException
+	{
 
 		// To verify wheather user is able to login with Valid Credentials
 
@@ -46,20 +47,22 @@ public class BasicTest {
 		WebElement nextButton2=driver.findElement(By.xpath("//span[contains(text(),'Next')]"));
 		nextButton2.click();
 
-		// To Verify Wheather User is able to login into Google Keep Account Successfully
+		// To Verify Wheather User on Google Keep Page or not
+
 		String actualTittle="Google Keep";
 		Thread.sleep(5000);
 		String expectedTittle=driver.getTitle();
 		Assert.assertEquals(expectedTittle, actualTittle);
 
 		// To Verify wheather user is able to create a Keep Note Successfully
+
 		WebElement takeANoteTextbox=driver.findElement(By.xpath("//div[@aria-label='Take a note…']"));
 		takeANoteTextbox.sendKeys("sample Note");
 		WebElement closeButton=driver.findElement(By.xpath("//div[@class='IZ65Hb-yePe5c']//child::div[text()='Close']"));
 		closeButton.click();
 		Thread.sleep(5000);
 		WebElement SampleNote=driver.findElement(By.xpath("//div[contains(text(),'sample Note')]"));
-		
+
 		boolean checkSampleNote=SampleNote.isDisplayed();
 		Assert.assertTrue(checkSampleNote,"note is not displayed");
 
