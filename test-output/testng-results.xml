@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-25T19:13:53 IST" name="Default suite" finished-at="2023-05-25T19:14:24 IST" duration-ms="31795">
+  <suite started-at="2023-06-21T17:50:00 IST" name="Default suite" finished-at="2023-06-21T17:50:17 IST" duration-ms="16788">
     <groups>
     </groups>
-    <test started-at="2023-05-25T19:13:53 IST" name="Default test" finished-at="2023-05-25T19:14:24 IST" duration-ms="31795">
-      <class name="mytest.Program">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:mytest.Program@3c73951]" started-at="2023-05-25T19:13:53 IST" name="setUp" finished-at="2023-05-25T19:13:56 IST" duration-ms="3357" status="PASS">
+    <test started-at="2023-06-21T17:50:00 IST" name="Default test" finished-at="2023-06-21T17:50:17 IST" duration-ms="16788">
+      <class name="com.qa.testCases.TC_LoginTest_01">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCases.TC_LoginTest_01@3e11f9e9]" started-at="2023-06-21T17:50:00 IST" name="setUp" finished-at="2023-06-21T17:50:02 IST" duration-ms="1560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTitle()[pri:0, instance:mytest.Program@3c73951]" started-at="2023-05-25T19:13:56 IST" name="verifyTitle" description="To verify the tittle page of Google Keep" finished-at="2023-05-25T19:14:24 IST" duration-ms="28264" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.qa.testCases.TC_LoginTest_01@3e11f9e9]" started-at="2023-06-21T17:50:02 IST" name="loginTest" finished-at="2023-06-21T17:50:17 IST" duration-ms="15073" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mytest.Program@3c73951]" started-at="2023-05-25T19:14:24 IST" name="tearDown" finished-at="2023-05-25T19:14:24 IST" duration-ms="138" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teaDown()[pri:0, instance:com.qa.testCases.TC_LoginTest_01@3e11f9e9]" started-at="2023-06-21T17:50:17 IST" name="teaDown" finished-at="2023-06-21T17:50:17 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mytest.Program -->
+        </test-method> <!-- teaDown -->
+      </class> <!-- com.qa.testCases.TC_LoginTest_01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
