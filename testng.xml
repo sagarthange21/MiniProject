@@ -8,6 +8,7 @@
   <test thread-count="5" name="Test">
 	 	  <classes>
 		  		  <class name="com.qa.testCases.TC_LoginTest_01"></class>
-	  </classes>
+		  		  <class name="com.qa.testCases.TC_CreNewCustomerTest_02"></class>
+		  		  	  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

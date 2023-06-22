@@ -28,7 +28,7 @@ public  class ExtentListner extends BaseClass  implements ITestListener{
 
 		String timestamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		String repname="Test-Report-"+timestamp+".html";
-		htmlReporter= new ExtentSparkReporter("C:\\Users\\UP2215\\eclipse-workspace\\MiniProject\\ExtentReports\\"+repname);
+		htmlReporter= new ExtentSparkReporter("C:\\Users\\UP2215\\eclipse-workspace\\Test_Banking_Automation_Project\\ExtentReports\\"+repname);
 		reports= new ExtentReports();
 		reports.attachReporter(htmlReporter);
 
@@ -65,7 +65,6 @@ public  class ExtentListner extends BaseClass  implements ITestListener{
 	public   void onTestSuccess(ITestResult result)
 	{
 		System.out.println("Name of test Method successfully executed : "+result.getName());
-		System.out.println("Name of test Method Failed : "+result.getName());
 		test=reports.createTest(result.getName());
 		test.log(Status.PASS, MarkupHelper.createLabel("Name of the Passed Test Case : "+result.getName(), ExtentColor.GREEN));
 	}

@@ -8,11 +8,16 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,788</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40,635</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testCases.TC_LoginTest_01</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1687350002368</td><td rowspan="1">15073</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.testCases.TC_LoginTest_01</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1687434713193</td><td rowspan="1">4105</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testCases.TC_CreNewCustomerTest_02</td><td><a href="#m1">createNewCutomer</a></td><td rowspan="1">1687434724446</td><td rowspan="1">19827</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.qa.testCases.TC_LoginTest_01#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.qa.testCases.TC_LoginTest_01#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.pageObjects.LoginPage.verifyUserLoginSuccessfully(LoginPage.java:60)
+	at com.qa.testCases.TC_LoginTest_01.loginTest(TC_LoginTest_01.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.testCases.TC_CreNewCustomerTest_02#createNewCutomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

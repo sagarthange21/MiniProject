@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 20 20:02:02 IST 2023</td>
+<td>Started on:</td><td>Thu Jun 22 17:21:43 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24759 ms)</td>
+<tr><td>Total time:</td><td>40 seconds (40635 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.testCases.TC_LoginTest_01.loginTest()'><b>loginTest</b><br>Test class: com.qa.testCases.TC_LoginTest_01</td>
+<td title='com.qa.testCases.TC_LoginTest_01.loginTest()'><b>loginTest</b><br>Test class: com.qa.testCases.TC_LoginTest_01<br>Test method: Logging into the banking application with valid credentials</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.qa.testCases.TC_LoginTest_01.loginTest(TC_LoginTest_01.java:29)
+	at com.qa.pageObjects.LoginPage.verifyUserLoginSuccessfully(LoginPage.java:60)
+	at com.qa.testCases.TC_LoginTest_01.loginTest(TC_LoginTest_01.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1694408103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1694408103'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1431699407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1431699407'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
 	at org.testng.Assert.assertTrue(Assert.java:55)
-	at com.qa.testCases.TC_LoginTest_01.loginTest(TC_LoginTest_01.java:29)
+	at com.qa.pageObjects.LoginPage.verifyUserLoginSuccessfully(LoginPage.java:60)
+	at com.qa.testCases.TC_LoginTest_01.loginTest(TC_LoginTest_01.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,8 +117,21 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>22</td>
-<td>com.qa.testCases.TC_LoginTest_01@1de5f259</td></tr>
+<td>4</td>
+<td>com.qa.testCases.TC_LoginTest_01@53ce1329</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testCases.TC_CreNewCustomerTest_02.createNewCutomer()'><b>createNewCutomer</b><br>Test class: com.qa.testCases.TC_CreNewCustomerTest_02<br>Test method: Adding new Customer and Verifying the newly Added customer</td>
+<td></td>
+<td>19</td>
+<td>com.qa.testCases.TC_CreNewCustomerTest_02@2c1b194a</td></tr>
 </table><p>
 </body>
 </html>

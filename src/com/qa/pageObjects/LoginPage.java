@@ -6,10 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.qa.testCases.BaseClass;
 
-public class LoginPage extends BaseClass{
+public class LoginPage extends BaseClass {
 
 
 	WebDriver ldriver;
@@ -49,6 +50,17 @@ public class LoginPage extends BaseClass{
 		loginBtn.click();
 	}
 
+	public void verifyUserLoginSuccessfully() 
+	{
+		if(driver.getTitle().equals("Guru99 Bank Manager HomePageee"))
+		{
+			Assert.assertTrue(true);
+		}else
+		{
+			Assert.assertTrue(false);	
+		}
+
+	}
 
 
 }
